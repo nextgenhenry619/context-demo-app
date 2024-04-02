@@ -9,6 +9,8 @@ import Switch from "@material-ui/core/Switch";
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles/NavBarStyles";
 
+import bender from './images/bender_icon.png'
+
 class Navbar extends Component {
   render() {
     const { classes } = this.props;
@@ -18,10 +20,10 @@ class Navbar extends Component {
         <AppBar position='static' color='primary'>
           <Toolbar>
             <IconButton className={classes.menuButton} color='inherit'>
-              <span>🇫🇷</span>
+              <img src={bender} alt="Bender"/>
             </IconButton>
             <Typography className={classes.title} variant='h6' color='inherit'>
-              App Title
+              theme →
             </Typography>
             <Switch />
             <div className={classes.grow} />
