@@ -12,6 +12,7 @@ import styles from "./styles/NavBarStyles";
 class Navbar extends Component {
   render() {
     const { classes } = this.props;
+    console.log(classes)
     return (
       <div className={classes.root}>
         <AppBar position='static' color='primary'>
